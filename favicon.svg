@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!--
+    KRONOS CONTROL — Chronos Crown Logo
+    Built on Golden Ratio (φ = 1.618) proportions
+    
+    All coordinates scaled from 40×40 master → 512×512 favicon
+    Scale factor: 12.0 | Offset: x+78, y+56
+    
+    GOLDEN RATIO PROOFS (40×40 master):
+    1. Junction at y=23.5 → φ ratio from top (18.5:11.5 = 1.609 ≈ φ)
+    2. Crown peaks: 6:9.7:15.7 = 1:φ:φ²
+    3. Hourglass indent: 4 units ≈ spine/φ²
+    4. Crown angle (33°) / Lower angle (21°) = 1.57 ≈ φ
+  -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#bg-gradient)"/>
+  
+  <!-- CHRONOS CROWN LOGO — Golden Ratio (φ = 1.618) Construction -->
+  <g stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Hourglass spine — KRONOS = God of Time -->
+    <!-- Junction at y=338 (golden section: 282/174 = 1.62 ≈ φ) -->
+    <path d="M210 116 L210 242 L162 338 L210 434 L210 476" stroke-width="35"/>
+    
+    <!-- Crown — 3 peaks ascending by φ ratio (6 divisions) -->
+    <!-- Peak heights: 72:116:188 = 1:1.61:2.61 = 1:φ:φ² -->
+    <path d="M210 338 L258 266 L306 296 L354 218 L402 266 L450 152 L498 194" stroke-width="30"/>
+    
+    <!-- Lower diagonal — crown/lower angle ratio ≈ φ -->
+    <line x1="210" y1="338" x2="498" y2="452" stroke-width="30"/>
+  </g>
+</svg>
